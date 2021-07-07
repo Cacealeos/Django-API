@@ -1,0 +1,32 @@
+<h1>Hippo</h1>
+{{text}}
+
+<form method='get' action="">
+    {% csrf_token %}
+
+<input type="text", name="channel"> 
+
+<button type=submit name="Search">Search for Channel</button>
+
+</form>
+
+<form method="get" action="" >
+    {% csrf_token %}
+
+<b>Total Views:</b><input type="text", name="channel" value="{{CH}}" readonly='readonly'> 
+
+<b>Total Uploads:</b><input type="text", name="uploads" value="{{PV}}" readonly='readonly'> 
+
+<b>Total Views:</b><input type="text", name="views" value="{{TV}}" readonly='readonly'> 
+
+<b>Subscribers:</b><input type="text", name="subs" value="{{SB}}" readonly='readonly'> 
+
+<button type=submit name="LogInfo">
+Log Channel
+</button>
+
+</form>
+
+
+
+<div></div>
